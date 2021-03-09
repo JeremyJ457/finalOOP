@@ -12,10 +12,10 @@ public class Enemy {
     }
 
     public void setHp(double hp) {
-        if (hp >= this.hp){
+        this.hp = hp;
+        if (this.hp <= 0.0){
             this.hp = 0.0;
         }
-        this.hp = hp;
     }
 
     public void decreaseHp(double damage){
